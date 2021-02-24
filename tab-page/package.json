@@ -1,0 +1,15 @@
+{
+  "name": "tab-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-sass -w scss/ -o build/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC"
+}
