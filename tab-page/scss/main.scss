@@ -24,9 +24,14 @@ header {
 
         a {
           color: inherit;
+          font-weight: 700;
           text-decoration: none;
 
-          .active {
+          &:hover {
+            color: maroon;
+          }
+
+          &.active {
             text-decoration: underline;
           }
         }
