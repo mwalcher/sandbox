@@ -5,6 +5,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const getHash = (link) => link.hash.substring(link.hash.indexOf('#'));
 
+    function loadSection() {
+        const hash = window.location.hash ? window.location.hash : getHash(tabNavigation[0]);
+        toggleSection(hash);
+    }
+
     function resetActiveSection() {
         tabNavigation.forEach(link => link.classList.remove(activeClass));
         tabSections.forEach(section => section.classList.remove(activeClass));
@@ -26,15 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    tabNavigation.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const hash = getHash(e.target);
-            toggleSection(hash);
-        });
-    });
-
-    window.addEventListener('load', () => {
-        const hash = window.location.hash ? window.location.hash : getHash(tabNavigation[0]);
-        toggleSection(hash);
-    })
+    window.addEventListener('load', loadSection);
+    window.addEventListener('hashchange', loadSection);
 });
