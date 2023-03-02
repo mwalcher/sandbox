@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { TodoId, TodoItem, TodoList } from '../@types/todo';
+import type { TodoId, TodoItem, TodoList } from '@/@types/todo';
 
 export const useTodoListStore = defineStore('todoList', {
   state: () => ({
