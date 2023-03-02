@@ -1,5 +1,5 @@
-<script lang="ts" setup>
-//
-</script>
+<script lang="ts" setup></script>
 
-<template>TODO LIST (child)</template>
+<template>
+  <div></div>
+</template>

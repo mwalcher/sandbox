@@ -4,6 +4,9 @@ import TodoList from './TodoList.vue';
 </script>
 
 <template>
-  <TodoForm />
-  <TodoList />
+  <div class="todo-app">
+    <h1>To Do List</h1>
+    <TodoForm />
+    <TodoList />
+  </div>
 </template>
