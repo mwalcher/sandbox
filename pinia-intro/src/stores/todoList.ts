@@ -10,5 +10,10 @@ export const useTodoListStore = defineStore('todoList', {
     addTodo(item: TodoItem) {
       this.todoList.push({ item, id: this.id++, completed: false });
     },
+    deleteTodo(itemId: TodoId) {
+      this.todoList = this.todoList.filter((object) => {
+        object.id !== itemId;
+      });
+    },
   },
 });
