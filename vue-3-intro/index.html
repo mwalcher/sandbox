@@ -17,7 +17,7 @@
 
     <div class="cart">Cart({{ cart }})</div>
 
-    <product-display :premium="premium" />
+    <product-display :premium="premium" @add-to-cart="updateCart" />
   </div>
 
   <!-- Import App -->
