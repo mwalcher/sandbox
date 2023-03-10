@@ -1,3 +1,5 @@
+import '../src/stories/components/StoryBookCopyImport'
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
