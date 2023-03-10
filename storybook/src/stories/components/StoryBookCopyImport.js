@@ -11,9 +11,9 @@ styleBlock.innerHTML = `
             display: inline-flex;
             align-items: center;
             background-color: #f8f8f8;
+            padding: 0.5rem;
+            border: 2px solid #212121;
             border-radius: 4px;
-            border: 2px solid #107533;
-            padding: 1rem 1.5rem;
         }
 
         .storybook-ui-copy-import:before,
@@ -32,16 +32,16 @@ styleBlock.innerHTML = `
 
         .storybook-ui-copy-import:before {
             content: '';
-            border: 0.8rem solid transparent;
-            border-right-color: #107533;
-            margin-left: -1.5rem;
+            border: 0.5rem solid transparent;
+            border-right-color: #339933;
+            margin-left: -1rem;
         }
 
         .storybook-ui-copy-import:after {
             content: 'Copied!';
             color: white;
-            background-color: #107533;
-            padding: 0.5rem 1rem;
+            background-color: #339933;
+            padding: 0.5rem;
             border-radius: 4px;
         }
 
@@ -58,21 +58,22 @@ styleBlock.innerHTML = `
 
         .storybook-ui-copy-import-button {
             color: white;
-            background-color: #107533;
+            background-color: #339933;
             padding: 0.5rem 1rem;
             margin-left: 2rem;
             border: 0;
             border-radius: 9999px;
+            cursor: pointer;
             transition: background-color 0.125s ease-out;
         }
 
         .storybook-ui-copy-import-button:hover,
         .storybook-ui-copy-import-button:focus {
-            background-color: #0c5a27;
+            background-color: #267226;
         }
 
         #copy-import-id {
-            background-color: rgba(69, 191, 106, 0.1);
+            background-color: rgba(51, 153, 51, 0.1);
             padding: 0.5rem 1rem;
             border-radius: 4px;
         }
